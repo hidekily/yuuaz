@@ -1,0 +1,181 @@
+:root{
+    --colorB:beige;
+    --colorBLACK:black;
+    --colorLIGHT:lightgreen;
+    --bg-color2:crimson;
+}
+
+body{
+    margin: 0;
+    background-color: var(--colorB);
+}
+
+#navbar{
+
+    height: 90px;
+
+    background-color: var(--colorBLACK);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#box1, #box2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+    color: var(--colorLIGHT);
+
+    gap: 3rem;
+    margin-left: 5%;
+}
+
+#button{
+    width: 20px;
+    height:20px;
+
+    border-radius: 10px;
+    border: 2px solid var(--colorLIGHT);
+}
+
+#c1{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    word-break: break-all;
+}
+
+#boxes{
+    display: flex;
+
+    flex-direction: column;
+    gap: 3rem;
+
+    border: 2px solid var(--colorLIGHT);
+    width: 15%;
+    height: 80%;
+
+    flex-wrap:wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+#img{
+    background-image: url('https://cdn.pixabay.com/photo/2021/09/14/17/55/girl-6624686_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+    border: 4px solid var(--colorB);
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    width: 36%;
+    height: 22%;
+
+    margin-top: 2%;    
+
+}
+
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: beige;
+    height: 80px;
+
+}
+
+#boximgs{
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+#images1, #images2, #images3, #images4{
+    width: 18%;
+    height: 60%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#images1{
+    background-image: url('/pics/do-utilizador.svg');
+}
+#images2{
+    background-image: url('/pics/chamada-telefonica.svg');
+}
+#images3{
+    background-image: url('/pics/envelope.svg');
+}
+#images4{
+    background-image: url('/pics/marcador.svg');
+}
+
+#container2{
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#boxtxts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 80%;
+    height: 100%;
+    word-wrap: break-word;
+
+
+}
+
+#kimi{
+    width: 25%;
+    height: 100%;
+    border: 2px solid violet;
+
+    word-wrap: break-word;
+
+}
+
+#kimitxt{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+@media(max-width:774px){
+    #kimi{
+        font-size:small ;
+    }
+    #container2{
+        height: 600px;
+    }
+    #images1, #images2, #images3, #images4{
+        background-size: 80%;
+    }
+}
